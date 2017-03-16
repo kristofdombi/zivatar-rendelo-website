@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var data = require('../data.json');
+const express = require('express');
+const router = express.Router();
+const data = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -33,27 +33,30 @@ router.get('/szolgaltatasaink', function(req, res){
 
 router.get('/szolgaltatasaink/:service', function(req, res, next) {
 
-  var service = req.params.service;
-  var selectedService;
-  var selectedServiceIndex;
-  var otherServices;
+  let services = data.hu.services;
+  let requestedService = req.params.service;
+  let selectedService;
+  let otherServices;
 
-  for (var i = 0; i < data.hu.services.length; i++) {
-    if (service === data.hu.services[i].id) {
-      selectedService = data.hu.services[i];
-      selectedServiceIndex = i;
+  const newSelectedService = services.filter(service =>
+    service.id === requestedService
+  );
+
+  otherServices = services.filter(service =>
+    service.id !== requestedService
+  );
+
+  for (var i = 0; i < services.length; i++) {
+    if (requestedService === services[i].id) {
+      selectedService = services[i];
     }
   }
 
-  if (selectedServiceIndex === 0) {
-    otherServices = data.hu.services.slice(selectedServiceIndex + 1, data.hu.services.length);
-  } else if (selectedServiceIndex !== 0 && selectedServiceIndex !== data.hu.services.length - 1) {
-    var firstHalf = data.hu.services.slice(0, selectedServiceIndex);
-    var otherHalf = data.hu.services.slice(selectedServiceIndex + 1, data.hu.services.length);
-    otherServices = firstHalf.concat(otherHalf);
-  } else if (selectedServiceIndex === data.hu.services.length - 1) {
-    otherServices = data.hu.services.slice(0, selectedServiceIndex);
-  }
+  console.log('--------------------------');
+  console.log(newSelectedService);
+  console.log('--------------------------');
+  console.log(selectedService);
+  console.log('--------------------------');
 
   if (selectedService && selectedService !== undefined) {
     res.render('service-description', {
