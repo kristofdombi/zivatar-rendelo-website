@@ -1,0 +1,12 @@
+extends layout
+
+include components/service-card.pug
+include components/service-label.pug
+
+block content
+
+  .service-list
+    .services
+      +service-label('Services')
+      .services-wrapper
+        +service-card(services)

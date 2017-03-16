@@ -1,0 +1,9 @@
+mixin service-description-en(service)
+  .service-description
+    span.service-description-label Overview
+    span.service-description-content= service.content
+    span.service-description-price-label Price of our service
+    span.service-description-price #{service.price[0]} Ft - #{service.price[1]} Ft
+    span.service-description-price-notice Prices may vary. Price variation depends on the duration, how many people would like to take part on the service and so on.
+    span.service-description-duration-label Duration
+    span.service-description-duration #{service.duration[0]} minutes - #{service.duration[1]} minutes

@@ -1,0 +1,26 @@
+@import "./normalize";
+@import "./mixins";
+@import "./variables";
+@import "./z-index";
+@import "./fonts";
+
+@import "./pages/index";
+@import "./pages/service-description";
+@import "./pages/colleague-description";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+}
+
+body {
+  background-color: @body-background-color;
+  padding: @nav-height 0 0 0;
+  font-family: 'Montserrat-light';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,140 @@
+.service-description-header {
+  .display(flex);
+  .align-items(center);
+  .justify-content(center);
+  max-width: 960px;
+  padding: 0 5%;
+  margin: 30px auto 0 auto;
+
+  .service-icon-circle {
+    .dimensions(150px, 150px);
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 0 60px 0 0;
+    display: none;
+  }
+
+  .service-label {
+    margin: 15px 0 0 0;
+    font-size: 20px;
+
+    .label-underline {
+      width: 65px;
+    }
+
+  }
+
+  @media (min-width: 745px) {
+    .justify-content(flex-start);
+
+    .service-icon-circle {
+      display: block;
+    }
+
+    .service-label {
+      margin: 0;
+      text-align: left;
+
+      .label-underline {
+        width: 130px;
+        margin: 25px 0 0 0;
+      }
+
+    }
+  }
+
+  @media (min-width: 961px) {
+    & {
+      padding: 0;
+    }
+  }
+
+}
+
+.service-description-wrapper {
+  .display(flex);
+  .flex-direction(row);
+  .flex-wrap(wrap);
+  margin: 30px auto 0 auto;
+  max-width: 960px;
+  color: @service-description-text-color;
+  padding: 0 5%;
+
+  .service-description {
+    background-color: #fff;
+    border-radius: 5px;
+    .box-shadow(@service-description-shadow);
+    padding: 20px;
+
+    .service-description-label {
+      display: block;
+      font-size: 20px;
+    }
+
+    .service-description-content {
+      display: block;
+      margin: 10px 0 0 0;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .service-description-price-label {
+      display: block;
+      font-size: 20px;
+      margin: 25px 0 0 0;
+    }
+
+    .service-description-price {
+      display: block;
+      font-size: 20px;
+      margin: 10px 0 0 0;
+      color: @service-description-highlighted-text-color;
+    }
+
+    .service-description-price-notice {
+      display: block;
+      font-size: 10px;
+      line-height: 15px;
+      margin: 10px 0 0 0;
+    }
+
+    .service-description-duration-label {
+      display: block;
+      margin: 25px 0 0 0;
+      font-size: 20px;
+    }
+
+    .service-description-duration {
+      display: block;
+      font-size: 20px;
+      margin: 10px 0 0 0;
+      color: @service-description-highlighted-text-color;
+    }
+
+  }
+
+  @media (min-width: 745px) {
+
+    .service-description {
+      .flex(2);
+    }
+
+  }
+
+  @media (min-width: 961px) {
+    & {
+      padding: 0;
+    }
+
+    .service-description {
+      padding: 40px;
+
+      .service-description-price-notice {
+        font-size: 12px;
+      }
+
+    }
+
+  }
+
+}

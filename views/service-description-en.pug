@@ -1,0 +1,26 @@
+extends layout
+
+include components/service-label.pug
+include components/service-description-en.pug
+include components/colleague-list.pug
+include components/minified-service.pug
+
+block content
+
+  .service-description-header
+
+    .service-icon-circle
+    +service-label(service.name)
+
+  .service-description-wrapper
+
+    +service-description-en(service)
+
+    .colleague-list
+
+      span.colleague-introduction These colleagues provide #{service.name.toLowerCase()}:
+      +colleague-list(service, isEnglish)
+
+  .minified-services
+    +service-label('Other services')
+    +minified-service(otherServices, isEnglish)

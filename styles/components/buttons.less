@@ -1,0 +1,17 @@
+.hero-button {
+  display: block;
+  .dimensions(220px,30px);
+  background-color: @hero-button-background-color;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  padding-top: 6px;
+  .border-radius(5px);
+  margin: 75px auto 0 auto;
+  cursor: pointer;
+  .transition(.3s ease-in-out);
+
+  &:hover {
+    background-color: darken(@hero-button-background-color, 15%);
+  }
+}

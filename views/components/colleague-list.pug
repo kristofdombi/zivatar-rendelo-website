@@ -1,0 +1,20 @@
+mixin colleague-list(service, isEnglish)
+  .colleagues
+    each colleague in service.colleagues
+
+      if isEnglish
+
+        a(href=`../../${colleague.url}` title=`${colleague.name}'s profile`).colleague-anchor
+          .colleague
+            .avatar
+            .colleague-info
+              .colleague-name= colleague.name
+              .colleague-title= colleague.title
+      else
+
+        a(href=`${colleague.url}` title=`${colleague.name} profilja`).colleague-anchor
+          .colleague
+            .avatar
+            .colleague-info
+              .colleague-name= colleague.name
+              .colleague-title= colleague.title

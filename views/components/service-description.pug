@@ -1,0 +1,9 @@
+mixin service-description(service)
+  .service-description
+    span.service-description-label Áttekintés
+    span.service-description-content= service.content
+    span.service-description-price-label Szolgáltatásunk ára
+    span.service-description-price #{service.price[0]} Ft - #{service.price[1]} Ft
+    span.service-description-price-notice Szolgáltatásunk díja az idótartamtól, és munkatársunk órabérétől is függ. Pontosabb összegért a munkátársainknál érdeklődhet.
+    span.service-description-duration-label Időtartam
+    span.service-description-duration #{service.duration[0]} perc - #{service.duration[1]} perc

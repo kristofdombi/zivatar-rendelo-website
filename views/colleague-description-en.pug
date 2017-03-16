@@ -1,0 +1,35 @@
+extends layout
+
+include components/service-label.pug
+include components/colleague-description.pug
+include components/service-list.pug
+include components/minified-service.pug
+
+block content
+
+  .colleague-description-header
+
+    .service-icon-circle
+    .colleague-label
+      +service-label(colleague.name)
+      .label-title= colleague.title
+    .colleague-contact
+      a(href=`mailto:${colleague.contact.mail}`).mail
+        span= colleague.contact.mail
+        include includes/mail-icon.pug
+      a(href=`tel:${colleague.contact.phone}`).phone
+        span= colleague.contact.phone
+        img(src="../../images/call-icon.svg")
+
+  .colleague-description-wrapper
+
+    +colleague-description(colleague)
+
+    .colleague-service-list
+
+      span.service-introduction #{colleague.name} does the below:
+      +service-list(colleague, isEnglish)
+
+  .minified-services
+    +service-label('Other services')
+    +minified-service(services, isEnglish)

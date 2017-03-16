@@ -1,0 +1,28 @@
+extends layout
+
+include components/service-label.pug
+include components/service-description.pug
+include components/colleague-list.pug
+include components/minified-service.pug
+
+block content
+
+  - const isEnglish = false
+
+  .service-description-header
+
+    .service-icon-circle
+    +service-label(service.name)
+
+  .service-description-wrapper
+
+    +service-description(service)
+
+    .colleague-list
+
+      span.colleague-introduction Alábbi munkatársaink végzik ezt a szolgáltatást:
+      +colleague-list(service)
+
+  .minified-services
+    +service-label('Egyéb szolgáltatásaink')
+    +minified-service(otherServices, isEnglish)

@@ -1,0 +1,25 @@
+extends layout
+
+include components/service-card.pug
+include components/service-label.pug
+
+block content
+  .hero
+    .hero-content
+      .logo-wrapper
+        img.logo(src="../images/zivatar-logo-2.svg")
+        span Zivatar rendelő
+      a.hero-button Ismerjen meg minket
+  .services
+    +service-label('Szolgáltatásaink')
+    .services-wrapper
+      +service-card(services)
+  #galeria
+    +service-label('Galéria')
+    .gallery-wrapper
+      img(src="../images/room-1.jpg" alt="Zivatar vendeglo szoba" data-action="zoom").gallery-img
+      img(src="../images/room-2.jpg" alt="Zivatar vendeglo szoba" data-action="zoom").gallery-img
+      img(src="../images/room-3.jpg" alt="Zivatar vendeglo szoba" data-action="zoom").gallery-img
+      img(src="../images/room-4.jpg" alt="Zivatar vendeglo szoba" data-action="zoom").gallery-img
+      img(src="../images/room-2.jpg" alt="Zivatar vendeglo szoba" data-action="zoom").gallery-img
+      img(src="../images/room-3.jpg" alt="Zivatar vendeglo szoba" data-action="zoom").gallery-img

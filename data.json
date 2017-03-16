@@ -1,0 +1,352 @@
+{
+  "hu": {
+    "menu": [
+      {
+        "name": "Szolgáltatásaink",
+        "url": "/szolgaltatasaink"
+      },
+      {
+        "name": "Munkatársaink",
+        "url":  "/munkatarsaink"
+      },
+      {
+        "name": "Galéria",
+        "url":  "#galeria"
+      },
+      {
+        "name": "Mottónk",
+        "url":  "#motto"
+      },
+      {
+        "name": "Elérhetőségeink",
+        "url":  "/elerhetosegeink"
+      }
+    ],
+    "services": [
+      {
+        "id": "csaladterapia",
+        "name": "Családterápia",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [10000, 12000],
+        "duration": [30, 90],
+        "colleagues": [
+          {
+            "name": "Madar Iren",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/madar-iren"
+          },
+          {
+            "name": "Kiss Istvan",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/kiss-istvan"
+          },
+          {
+            "name": "Nagy Anna",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/nagy-anna"
+          }
+        ],
+        "url": "/szolgaltatasaink/csaladterapia"
+      },
+      {
+        "id": "szupervizio",
+        "name": "Szupervízió",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [10000, 12000],
+        "duration": [50, 120],
+        "colleagues": [
+          {
+            "name": "Madar Iren",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/madar-iren"
+          },
+          {
+            "name": "Konyeck Peter Lajos",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/kiss-istvan"
+          },
+          {
+            "name": "Nagy Anna",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/nagy-anna"
+          }
+        ],
+        "url": "/szolgaltatasaink/szupervizio"
+      },
+      {
+        "id": "mental-higenia",
+        "name": "Mental higenia",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [10000, 12000],
+        "duration": [50, 120],
+        "colleagues": [
+          {
+            "name": "Madar Iren",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/madar-iren"
+          },
+          {
+            "name": "Konyeck Peter Lajos",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/kiss-istvan"
+          },
+          {
+            "name": "Nagy Anna",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/nagy-anna"
+          }
+        ],
+        "url": "/szolgaltatasaink/mental-higenia"
+      },
+      {
+        "id": "pszichoterapia",
+        "name": "Pszichoterapia",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [10000, 12000],
+        "duration": [50, 120],
+        "colleagues": [
+          {
+            "name": "Madar Iren",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/madar-iren"
+          },
+          {
+            "name": "Konyeck Peter Lajos",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/kiss-istvan"
+          },
+          {
+            "name": "Nagy Anna",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/nagy-anna"
+          }
+        ],
+        "url": "/szolgaltatasaink/pszichoterapia"
+      },
+      {
+        "id": "karrier-tanacsadas",
+        "name": "Karrier tanácsadás",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [33000, 42000],
+        "duration": [20, 60],
+        "colleagues": [
+          {
+            "name": "Madar Iren",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/madar-iren"
+          },
+          {
+            "name": "Kiss Istvan",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/kiss-istvan"
+          },
+          {
+            "name": "Nagy Anna",
+            "title": ["coach","terapeuta"],
+            "url": "/munkatarsaink/nagy-anna"
+          }
+        ],
+        "url": "/szolgaltatasaink/karrier-tanacsadas"
+      }
+    ],
+    "colleagues": [
+      {
+        "id": "dr-kovacs-akos",
+        "name": "Dr Kovacs Akos",
+        "title": ["coach","terapeuta"],
+        "url": "/munkatarsaink/dr-kovacs-akos",
+        "introduction": "Lorem ipsum",
+        "services": [
+          {
+            "name": "Pszichoterapia",
+            "url": "/szolgaltatasaink/pszichoterapia"
+          },
+          {
+            "name": "Karrier tanácsadás",
+            "url": "/szolgaltatasaink/karrier-tanacsadas"
+          }
+        ],
+        "contact" : {
+          "mail": "user@example.com",
+          "phone": "06-20-422-08-14"
+        }
+      },
+      {
+        "id": "madar-iren",
+        "name": "Madar Iren",
+        "title": ["coach","terapeuta"],
+        "url": "/munkatarsaink/madar-iren",
+        "introduction": "Lorem ipsum",
+        "services": [
+          {
+            "iconUrl": "to be added",
+            "name": "Pszichoterapia",
+            "url": "/szolgaltatasaink/pszichoterapia"
+          },
+          {
+            "iconUrl": "to be added",
+            "name": "Karrier tanácsadás",
+            "url": "/szolgaltatasaink/karrier-tanacsadas"
+          }
+        ],
+        "contact" : {
+          "mail": "user@example.com",
+          "phone": "06-20-422-08-14"
+        }
+      }
+    ]
+  },
+  "en": {
+    "menu": [
+      {
+        "name": "Services",
+        "url": "/en/services"
+      },
+      {
+        "name": "Colleagues",
+        "url":  "/en/colleagues"
+      },
+      {
+        "name": "Gallery",
+        "url":  "#gallery"
+      },
+      {
+        "name": "Motto",
+        "url":  "#motto"
+      },
+      {
+        "name": "Contact",
+        "url":  "/en/contact"
+      }
+    ],
+    "services": [
+      {
+        "id": "family-therapy",
+        "name": "Family therapy",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [10000, 12000],
+        "duration": [50, 120],
+        "url": "en/services/family-therapy",
+        "colleagues": [
+          {
+            "name": "Iren Madar",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/iren-madar"
+          },
+          {
+            "name": "Istvan Kiss",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/istvan-kiss"
+          },
+          {
+            "name": "Anna Nagy",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/anna-nagy"
+          }
+        ]
+      },
+      {
+        "id": "mental-higeny",
+        "name": "Mental higeny",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [10000, 12000],
+        "duration": [50, 120],
+        "url": "en/services/mental-higeny",
+        "colleagues": [
+          {
+            "name": "Iren Madar",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/iren-madar"
+          },
+          {
+            "name": "Istvan Kiss",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/istvan-kiss"
+          },
+          {
+            "name": "Anna Nagy",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/anna-nagy"
+          }
+        ]
+      },
+      {
+        "id": "supervision",
+        "name": "Supervision",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": [33000, 42000],
+        "duration": [20, 60],
+        "url": "en/services/supervision",
+        "colleagues": [
+          {
+            "name": "Iren Madar",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/iren-madar"
+          },
+          {
+            "name": "Istvan Kiss",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/istvan-kiss"
+          },
+          {
+            "name": "Anna Nagy",
+            "title": ["coach","terapeuta"],
+            "url": "en/colleagues/anna-nagy"
+          }
+        ]
+      }
+    ],
+    "colleagues": [
+      {
+        "id": "dr-akos-kovacs",
+        "name": "Dr Akos Kovacs",
+        "title": ["coach","terapeuta"],
+        "url": "en/colleagues/anna-nagy",
+        "introduction": "Lorem ipsum",
+        "services": [
+          {
+            "name": "Supervision",
+            "url": "en/services/supervision"
+          },
+          {
+            "name": "Mental higeny",
+            "url": "en/services/mental-higeny"
+          }
+        ],
+        "contact" : {
+          "mail": "user@example.com",
+          "phone": "06-20-422-08-14"
+        }
+      },
+      {
+        "id": "iren-madar",
+        "name": "Iren Madar",
+        "title": ["coach","terapeuta"],
+        "url": "en/colleagues/iren-madar",
+        "introduction": "Lorem ipsum",
+        "services": [
+          {
+            "name": "Supervision",
+            "url": "en/services/supervision"
+          },
+          {
+            "name": "Mental higeny",
+            "url": "en/services/mental-higeny"
+          }
+        ],
+        "contact" : {
+          "mail": "user@example.com",
+          "phone": "06-20-422-08-14"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+mixin service-list(colleague, isEnglish)
+  .colleague-services
+    each service in colleague.services
+
+      if isEnglish
+
+        a(href=`../../${service.url}` title=`${service.name}`).service-anchor
+          .service
+            .avatar
+            .service-info
+              .service-name= service.name
+      else
+
+        a(href=`${service.url}` title=`${service.name}`).service-anchor
+          .service
+            .avatar
+            .service-info
+              .service-name= service.name

@@ -1,0 +1,17 @@
+mixin service-card(services)
+  each service in services
+
+    if isEnglish
+      .service-card
+        a(href=`../${service.url}`)
+          .service-card-circle
+          span.service-card-title= service.name
+          span.service-card-description= service.excerpt.length > 110 ? service.excerpt.slice(0,110) + "..." : service.excerpt
+
+    else
+
+      .service-card
+        a(href=`${service.url}`)
+          .service-card-circle
+          span.service-card-title= service.name
+          span.service-card-description= service.excerpt.length > 110 ? service.excerpt.slice(0,110) + "..." : service.excerpt

@@ -1,0 +1,15 @@
+mixin minified-service(services, isEnglish)
+  .minified-service
+    each service in services
+
+      if isEnglish
+
+        a(href=`/${service.url}` title=`${service.name} service page`).minified-service-wrapper
+          .minified-service-icon
+          span.minified-service-name= service.name
+
+      else
+
+        a(href=`${service.url}` title=`${service.name} szolgáltatás oldala`).minified-service-wrapper
+          .minified-service-icon
+          span.minified-service-name= service.name
