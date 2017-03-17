@@ -38,25 +38,13 @@ router.get('/szolgaltatasaink/:service', function(req, res, next) {
   let selectedService;
   let otherServices;
 
-  const newSelectedService = services.filter(service =>
+  selectedService = services.filter(service =>
     service.id === requestedService
-  );
+  )[0];
 
   otherServices = services.filter(service =>
     service.id !== requestedService
   );
-
-  for (var i = 0; i < services.length; i++) {
-    if (requestedService === services[i].id) {
-      selectedService = services[i];
-    }
-  }
-
-  console.log('--------------------------');
-  console.log(newSelectedService);
-  console.log('--------------------------');
-  console.log(selectedService);
-  console.log('--------------------------');
 
   if (selectedService && selectedService !== undefined) {
     res.render('service-description', {
