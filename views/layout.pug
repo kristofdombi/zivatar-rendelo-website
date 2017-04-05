@@ -8,13 +8,10 @@ html
     .header
       a(href=`${home}` title="Főoldal || Homepage").logo-anchor
 
-        -const logoSource = '../images/zivatar-logo-2.svg';
-
+        -const logoSource = '/images/zivatar-logo-2.svg';
         if services || colleague
           img.logo(src=`${logoSource}`)
-
         else
-
           img.logo(src=`../${logoSource}`)
 
         span Zivatar rendelő
