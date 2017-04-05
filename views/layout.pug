@@ -5,21 +5,22 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
-    .header
+    section.header
       a(href=`${home}` title="Főoldal || Homepage").logo-anchor
-
-        -const logoSource = '/images/zivatar-logo-2.svg';
-        if services || colleague
-          img.logo(src=`${logoSource}`)
-        else
-          img.logo(src=`../${logoSource}`)
-
+        img(src="/images/zivatar-logo-2.svg").logo
         span Zivatar rendelő
+        
       .menu-items
         each menuItem in menu
           a(href=`${menuItem.url}` title=`${menuItem.name}`).menu-item= menuItem.name
       a(href=`${switchLanguage.url}` title="Nyelv választása || Pick another language").switch-language= switchLanguage.value
+      
     block content
-    block script
-      script(src="../javascripts/main.js")
-      script(src="https://cdnjs.cloudflare.com/ajax/libs/zooming/1.0.10/zooming.min.js")
+      
+  footer
+    p Zivatar rendelő
+    p Copyright (c) 2017 Copyright Holder All Rights Reserved.
+    
+  block script
+    script(src="../javascripts/main.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/zooming/1.0.10/zooming.min.js")
