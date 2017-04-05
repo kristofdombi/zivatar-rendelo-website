@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var data = require('../data.json');
+const express = require('express');
+const router = express.Router();
+const data = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -33,27 +33,18 @@ router.get('/szolgaltatasaink', function(req, res){
 
 router.get('/szolgaltatasaink/:service', function(req, res, next) {
 
-  var service = req.params.service;
-  var selectedService;
-  var selectedServiceIndex;
-  var otherServices;
+  const services = data.hu.services;
+  const requestedService = req.params.service;
+  let selectedService;
+  let otherServices;
 
-  for (var i = 0; i < data.hu.services.length; i++) {
-    if (service === data.hu.services[i].id) {
-      selectedService = data.hu.services[i];
-      selectedServiceIndex = i;
-    }
-  }
+  selectedService = services.filter(service =>
+    service.id === requestedService
+  )[0];
 
-  if (selectedServiceIndex === 0) {
-    otherServices = data.hu.services.slice(selectedServiceIndex + 1, data.hu.services.length);
-  } else if (selectedServiceIndex !== 0 && selectedServiceIndex !== data.hu.services.length - 1) {
-    var firstHalf = data.hu.services.slice(0, selectedServiceIndex);
-    var otherHalf = data.hu.services.slice(selectedServiceIndex + 1, data.hu.services.length);
-    otherServices = firstHalf.concat(otherHalf);
-  } else if (selectedServiceIndex === data.hu.services.length - 1) {
-    otherServices = data.hu.services.slice(0, selectedServiceIndex);
-  }
+  otherServices = services.filter(service =>
+    service.id !== requestedService
+  );
 
   if (selectedService && selectedService !== undefined) {
     res.render('service-description', {
@@ -93,14 +84,13 @@ router.get('/munkatarsaink', function(req, res){
 
 router.get('/munkatarsaink/:colleague', function(req, res, next){
 
-  var colleague = req.params.colleague;
-  var selectedColleague;
+  const colleagues = data.hu.colleagues;
+  const requestedColleague = req.params.colleague;
+  let selectedColleague;
 
-  for (var i = 0; i < data.hu.colleagues.length; i++) {
-    if (colleague === data.hu.colleagues[i].id) {
-      selectedColleague = data.hu.colleagues[i];
-    }
-  }
+  selectedColleague = colleagues.filter(colleague =>
+    colleague.id === requestedColleague
+  )[0];
 
   if (selectedColleague && selectedColleague !== undefined) {
     res.render('colleague-description', {
