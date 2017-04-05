@@ -33,8 +33,8 @@ router.get('/szolgaltatasaink', function(req, res){
 
 router.get('/szolgaltatasaink/:service', function(req, res, next) {
 
-  let services = data.hu.services;
-  let requestedService = req.params.service;
+  const services = data.hu.services;
+  const requestedService = req.params.service;
   let selectedService;
   let otherServices;
 
@@ -84,14 +84,13 @@ router.get('/munkatarsaink', function(req, res){
 
 router.get('/munkatarsaink/:colleague', function(req, res, next){
 
-  var colleague = req.params.colleague;
-  var selectedColleague;
+  const colleagues = data.hu.colleagues;
+  const requestedColleague = req.params.colleague;
+  let selectedColleague;
 
-  for (var i = 0; i < data.hu.colleagues.length; i++) {
-    if (colleague === data.hu.colleagues[i].id) {
-      selectedColleague = data.hu.colleagues[i];
-    }
-  }
+  selectedColleague = colleagues.filter(colleague =>
+    colleague.id === requestedColleague
+  )[0];
 
   if (selectedColleague && selectedColleague !== undefined) {
     res.render('colleague-description', {

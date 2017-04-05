@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var data = require('../data.json');
+const express = require('express');
+const router = express.Router();
+const data = require('../data.json');
 
 /* GET users listing. */
 router.get('/', function(req, res) {
@@ -8,6 +8,7 @@ router.get('/', function(req, res) {
     title: 'Zivatar',
     menu: data.en.menu,
     home: '/en',
+    isEnglish: true,
     services: data.en.services,
     switchLanguage: {
       url: '/',
@@ -31,27 +32,18 @@ router.get('/services', function(req, res){
 });
 
 router.get('/services/:service', function(req, res, next) {
-  var service = req.params.service;
-  var selectedService;
-  var selectedServiceIndex;
-  var otherServices;
+  const services = data.en.services;
+  const requestedService = req.params.service;
+  let selectedService;
+  let otherServices;
 
-  for (var i = 0; i < data.en.services.length; i++) {
-    if (service === data.en.services[i].id) {
-      selectedService = data.en.services[i];
-      selectedServiceIndex = i;
-    }
-  }
+  selectedService = services.filter(service =>
+    service.id === requestedService
+  )[0];
 
-  if (selectedServiceIndex === 0) {
-    otherServices = data.en.services.slice(selectedServiceIndex + 1, data.en.services.length);
-  } else if (selectedServiceIndex !== 0 && selectedServiceIndex !== data.en.services.length - 1) {
-    var firstHalf = data.en.services.slice(0, selectedServiceIndex);
-    var otherHalf = data.en.services.slice(selectedServiceIndex + 1, data.en.services.length);
-    otherServices = firstHalf.concat(otherHalf);
-  } else if (selectedServiceIndex === data.en.services.length - 1) {
-    otherServices = data.en.services.slice(0, selectedServiceIndex);
-  }
+  otherServices = services.filter(service =>
+    service.id !== requestedService
+  );
 
   if (selectedService && selectedService !== undefined) {
     res.render('service-description-en', {
@@ -89,14 +81,13 @@ router.get('/colleagues', function(req, res){
 
 router.get('/colleagues/:colleague', function(req, res, next){
 
-  var colleague = req.params.colleague;
-  var selectedColleague;
+  const colleagues = data.en.colleagues;
+  const requestedColleague = req.params.colleague;
+  let selectedColleague;
 
-  for (var i = 0; i < data.en.colleagues.length; i++) {
-    if (colleague === data.en.colleagues[i].id) {
-      selectedColleague = data.en.colleagues[i];
-    }
-  }
+  selectedColleague = colleagues.filter(colleague =>
+    colleague.id === requestedColleague
+  )[0];
 
   if (selectedColleague && selectedColleague !== undefined) {
     res.render('colleague-description-en', {
